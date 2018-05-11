@@ -1,0 +1,148 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "line": 2,
+        "name": "Gmail Login",
+        "description": "",
+        "id": "gmail-testing;gmail-login",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 423467248,
+              "error_message": "java.lang.IllegalStateException: The driver executable does not exist: C:\\SeleniumWebdrivers\\chromedriver_win32\\chromedriver.exe\r\n\tat com.google.common.base.Preconditions.checkState(Preconditions.java:518)\r\n\tat org.openqa.selenium.remote.service.DriverService.checkExecutable(DriverService.java:123)\r\n\tat org.openqa.selenium.remote.service.DriverService.findExecutable(DriverService.java:118)\r\n\tat org.openqa.selenium.chrome.ChromeDriverService.access$000(ChromeDriverService.java:32)\r\n\tat org.openqa.selenium.chrome.ChromeDriverService$Builder.findDefaultExecutable(ChromeDriverService.java:137)\r\n\tat org.openqa.selenium.remote.service.DriverService$Builder.build(DriverService.java:302)\r\n\tat org.openqa.selenium.chrome.ChromeDriverService.createDefaultService(ChromeDriverService.java:88)\r\n\tat org.openqa.selenium.chrome.ChromeDriver.\u003cinit\u003e(ChromeDriver.java:124)\r\n\tat gmail.login.GmailTesting.stepDefinition.url_opened(stepDefinition.java:23)\r\n\tat ✽.Given url opened(src/test/java/GmailTest.feature:3)\r\n",
+              "status": "failed"
+            },
+            "line": 3,
+            "name": "url opened",
+            "match": {
+              "location": "stepDefinition.url_opened()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 4,
+            "name": "I verify gmail get opened with text \"Sign in\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Sign in",
+                  "offset": 37
+                }
+              ],
+              "location": "stepDefinition.i_verify_gmail_get_opened_with_text_something(String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 5,
+            "name": "I enter the email address \"xprotesting@gmail.com\" and click next button",
+            "match": {
+              "arguments": [
+                {
+                  "val": "xprotesting@gmail.com",
+                  "offset": 27
+                }
+              ],
+              "location": "stepDefinition.i_enter_the_email_address_something_and_click_next_button(String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 6,
+            "name": "enter password",
+            "match": {
+              "location": "stepDefinition.enter_password()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 7,
+            "name": "click login",
+            "match": {
+              "location": "stepDefinition.click_login()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 8,
+            "name": "I click on the google \"google\" email",
+            "match": {
+              "arguments": [
+                {
+                  "val": "google",
+                  "offset": 23
+                }
+              ],
+              "location": "stepDefinition.i_click_on_the_google_something_email(String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 9,
+            "name": "I verify message \"New device signed in to\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "New device signed in to",
+                  "offset": 18
+                }
+              ],
+              "location": "stepDefinition.i_verify_message_something(String)"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "line": 10,
+        "name": "Close The Gmail Id",
+        "description": "",
+        "id": "gmail-testing;close-the-gmail-id",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 309310,
+              "error_message": "java.lang.NullPointerException\r\n\tat gmail.login.GmailTesting.stepDefinition.close_browser(stepDefinition.java:94)\r\n\tat ✽.Then Close browser(src/test/java/GmailTest.feature:11)\r\n",
+              "status": "failed"
+            },
+            "line": 11,
+            "name": "Close browser",
+            "match": {
+              "location": "stepDefinition.close_browser()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      }
+    ],
+    "name": "Gmail Testing",
+    "description": "",
+    "id": "gmail-testing",
+    "keyword": "Feature",
+    "uri": "src/test/java/GmailTest.feature"
+  }
+]

@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?><testsuite failures="2" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="2" time="0.423776">
+<testcase classname="Gmail Testing" name="Gmail Login" time="0.423467">
+<failure message="java.lang.IllegalStateException: The driver executable does not exist: C:\SeleniumWebdrivers\chromedriver_win32\chromedriver.exe&#13;&#10;&#9;at com.google.common.base.Preconditions.checkState(Preconditions.java:518)&#13;&#10;&#9;at org.openqa.selenium.remote.service.DriverService.checkExecutable(DriverService.java:123)&#13;&#10;&#9;at org.openqa.selenium.remote.service.DriverService.findExecutable(DriverService.java:118)&#13;&#10;&#9;at org.openqa.selenium.chrome.ChromeDriverService.access$000(ChromeDriverService.java:32)&#13;&#10;&#9;at org.openqa.selenium.chrome.ChromeDriverService$Builder.findDefaultExecutable(ChromeDriverService.java:137)&#13;&#10;&#9;at org.openqa.selenium.remote.service.DriverService$Builder.build(DriverService.java:302)&#13;&#10;&#9;at org.openqa.selenium.chrome.ChromeDriverService.createDefaultService(ChromeDriverService.java:88)&#13;&#10;&#9;at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:124)&#13;&#10;&#9;at gmail.login.GmailTesting.stepDefinition.url_opened(stepDefinition.java:23)&#13;&#10;&#9;at ✽.Given url opened(src/test/java/GmailTest.feature:3)&#13;&#10;"><![CDATA[Given url opened............................................................failed
+Then I verify gmail get opened with text "Sign in"..........................skipped
+When I enter the email address "xprotesting@gmail.com" and click next button.skipped
+Then enter password.........................................................skipped
+And click login.............................................................skipped
+When I click on the google "google" email...................................skipped
+Then I verify message "New device signed in to".............................skipped
+
+StackTrace:
+java.lang.IllegalStateException: The driver executable does not exist: C:\SeleniumWebdrivers\chromedriver_win32\chromedriver.exe
+	at com.google.common.base.Preconditions.checkState(Preconditions.java:518)
+	at org.openqa.selenium.remote.service.DriverService.checkExecutable(DriverService.java:123)
+	at org.openqa.selenium.remote.service.DriverService.findExecutable(DriverService.java:118)
+	at org.openqa.selenium.chrome.ChromeDriverService.access$000(ChromeDriverService.java:32)
+	at org.openqa.selenium.chrome.ChromeDriverService$Builder.findDefaultExecutable(ChromeDriverService.java:137)
+	at org.openqa.selenium.remote.service.DriverService$Builder.build(DriverService.java:302)
+	at org.openqa.selenium.chrome.ChromeDriverService.createDefaultService(ChromeDriverService.java:88)
+	at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:124)
+	at gmail.login.GmailTesting.stepDefinition.url_opened(stepDefinition.java:23)
+	at ✽.Given url opened(src/test/java/GmailTest.feature:3)
+]]></failure>
+</testcase>
+<testcase classname="Gmail Testing" name="Close The Gmail Id" time="0.000309">
+<failure message="java.lang.NullPointerException&#13;&#10;&#9;at gmail.login.GmailTesting.stepDefinition.close_browser(stepDefinition.java:94)&#13;&#10;&#9;at ✽.Then Close browser(src/test/java/GmailTest.feature:11)&#13;&#10;"><![CDATA[Then Close browser..........................................................failed
+
+StackTrace:
+java.lang.NullPointerException
+	at gmail.login.GmailTesting.stepDefinition.close_browser(stepDefinition.java:94)
+	at ✽.Then Close browser(src/test/java/GmailTest.feature:11)
+]]></failure>
+</testcase>
+</testsuite>
